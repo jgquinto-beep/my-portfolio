@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+:root {
+  --brown-main: #7b4b2a;
+  --brown-light: #a56b4f;
+  --brown-dark: #5e3620;
+  --text-light: #f8f8f8;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -83,30 +90,28 @@ p {
 
 .nav-brand {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    align-items: center;  /* keeps them vertically centered */
+    gap: 0;         /* space between the two images */
+    padding-top: 10px;
+
 }
 
 .nav-logo {
-    width: 2.5rem;
-    height: 2.5rem;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-    border-radius: 0.5rem;
+    width: auto;       /* let the image define size */
+    height: auto;
+    background: none;  /* removes gradient */
+    border-radius: 0;  /* optional, removes rounded corners */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 
-.nav-logo svg {
-    width: 1.5rem;
-    height: 1.5rem;
+.nav-title img {
+    width: 250px;  /* make the second logo longer */
+    height: 50px;
 }
 
-.nav-title {
-    font-weight: 600;
-    color: #1e293b;
-}
+
 
 .nav-links {
     display: flex;
@@ -129,7 +134,7 @@ p {
 }
 
 .nav-link.active {
-    color: #4f46e5;
+    color: #7b4b2a;
 }
 
 /* Buttons */
@@ -179,12 +184,13 @@ p {
 .btn-submit {
     width: 100%;
     justify-content: center;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--brown-main), var(--brown-light));
+    color: var(--text-light);
+
 }
 
 .btn-submit:hover {
-    background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+    background: linear-gradient(135deg, var(--brown-dark), var(--brown-main));
 }
 
 .btn-submit svg {
@@ -205,7 +211,7 @@ p {
 .featured-glow {
     position: absolute;
     inset: -4px;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, var(--brown-main), var(--brown-light));
     border-radius: 1rem;
     opacity: 0.25;
     filter: blur(20px);
@@ -256,7 +262,7 @@ p {
 }
 
 .featured-category {
-    color: #a5b4fc;
+    color: #f8f8f8;
     margin-bottom: 0.5rem;
 }
 
@@ -286,7 +292,7 @@ p {
 }
 
 .carousel-btn:hover {
-    background: white;
+    background: var(--brown-light);
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -331,7 +337,7 @@ p {
 
 .dot.active {
     width: 2rem;
-    background: #4f46e5;
+    background: #7b4b2a;
 }
 
 /* All Projects Section */
@@ -376,7 +382,7 @@ p {
 }
 
 .project-card:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 25px -5px rgba(123, 75, 42, 0.3);
 }
 
 .project-image-wrapper {
@@ -400,7 +406,7 @@ p {
 }
 
 .project-category {
-    color: #4f46e5;
+    color: #a56b4f;
     font-size: 0.875rem;
     margin-bottom: 0.25rem;
 }
@@ -424,7 +430,7 @@ p {
 .divider {
     width: 5rem;
     height: 0.25rem;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #968c86 0%, #7b4b2a 100%);
     border-radius: 9999px;
     margin-bottom: 1.5rem;
 }
@@ -435,8 +441,8 @@ p {
 }
 
 .quote-box {
-    background: linear-gradient(135deg, #eef2ff 0%, #f3e8ff 100%);
-    border-left: 4px solid #4f46e5;
+    border-left: 4px solid var(--brown-main);
+    background: linear-gradient(135deg, #fbe9dd, #f3d9c6);
     padding: 1.5rem;
     border-radius: 0 0.5rem 0.5rem 0;
 }
@@ -459,7 +465,7 @@ p {
 .image-glow {
     position: absolute;
     inset: -4px;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, var(--brown-main), var(--brown-light));
     border-radius: 1rem;
     opacity: 0.25;
     filter: blur(20px);
@@ -548,7 +554,7 @@ p {
 
 .skill-progress {
     height: 100%;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #968c86 0%, #7b4b2a 100%);
     transition: width 1s ease;
     border-radius: 9999px;
 }
@@ -566,7 +572,7 @@ p {
 .divider-center {
     width: 5rem;
     height: 0.25rem;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, var(--brown-main), var(--brown-light));
     border-radius: 9999px;
     margin: 0 auto 1.5rem;
 }
@@ -584,10 +590,10 @@ p {
 }
 
 .contact-info-card {
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, var(--brown-main), var(--brown-light));
+    color: var(--text-light);
     border-radius: 1rem;
     padding: 2rem;
-    color: white;
 }
 
 .contact-info-card h3 {
@@ -595,7 +601,7 @@ p {
 }
 
 .contact-card-intro {
-    color: #a5b4fc;
+    color: #f8f8f8;
     margin-bottom: 2rem;
 }
 
@@ -631,7 +637,7 @@ p {
 }
 
 .contact-label {
-    color: #a5b4fc;
+    color: #f3d9c6;
     font-size: 0.875rem;
 }
 
@@ -646,7 +652,7 @@ p {
 }
 
 .social-label {
-    color: #a5b4fc;
+    color: #f8f8f8;
     font-size: 0.875rem;
     margin-bottom: 1rem;
 }
@@ -909,7 +915,7 @@ p {
 }
 
 .footer-contacts a:hover {
-    color: #4f46e5;
+    color: #a56b4f;
 }
 
 .footer-contacts svg {
@@ -918,7 +924,7 @@ p {
 }
 
 .footer-links h4 {
-    color: white;
+    color: #a56b4f;
     margin-bottom: 1rem;
 }
 
@@ -945,7 +951,7 @@ p {
 
 .footer-links button:hover,
 .footer-links a:hover {
-    color: #4f46e5;
+    color: #a56b4f;
 }
 
 .footer-bottom {
@@ -1027,6 +1033,10 @@ p {
     h2 {
         font-size: 1.5rem;
     }
+}
+.nav-logo img {
+    width: 60px;   /* adjust size of first logo */
+    height: auto;
 }
 
 @media (max-width: 640px) {
