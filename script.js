@@ -5,12 +5,12 @@
 const projects = [
     {
         id: 1,
-        title: 'E-Commerce Dashboard',
-        category: 'Web Design',
-        image: 'https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBpbnRlcmZhY2UlMjBkYXNoYm9hcmR8ZW58MXx8fHwxNzYzNDE2MDAzfDA&ixlib=rb-4.1.0&q=80&w=1080',
-        description: 'A comprehensive admin dashboard for e-commerce platforms featuring real-time analytics, inventory management, and customer insights. The design prioritizes data visualization and quick access to critical metrics.',
-        inspiration: 'Inspired by the need for merchants to quickly understand their business performance at a glance. I researched modern data visualization trends and consulted with several e-commerce business owners.',
-        tools: ['Figma', 'Adobe XD', 'Principle', 'React']
+        title: 'KIS App',
+        category: 'Flutter Mobile App Development',
+        image: "images/kis-app.png",
+        description: 'An online mobile application called KIS-App. Exclusively made for grade 10 students of Kapayapaan integrated school. It is made using a combination of Flutter and Firebase aimed to be easily accesible, managed and developed.',
+        inspiration: 'Schools have their own way of managing school work, either by paper or using other software like google classroom. But instead using some software, why not make one specifically tailored for the school needs.',
+        tools: ['Visual Studio', 'Android Studio', 'Kotlin', 'Firebase Studio']
     },
     {
         id: 2,
@@ -79,12 +79,11 @@ const projects = [
 
 // Skills data
 const skills = [
-    { name: 'UI/UX Design', level: 95 },
-    { name: 'Figma & Adobe XD', level: 90 },
-    { name: 'Mobile Design', level: 85 },
-    { name: 'Web Development', level: 80 }
+    { name: 'Flutter Mobile App Development', level: 95, icon: "images/flutter-logo.png" },
+    { name: 'Basic Programming', level: 80, icon: "images/basic-languages-icon.png" },
+    { name: 'Dart Language', level: 95, icon: "images/dart-logo.png" },
+    { name: 'Firebase/Firestore Database', level: 95, icon: "images/firebase-logo.png" }
 ];
-
 // ===========================
 // STATE MANAGEMENT
 // ===========================
@@ -347,29 +346,27 @@ function showProjectDetail(project) {
 // SKILLS SECTION
 // ===========================
 function initSkills() {
-    const skillsGrid = document.getElementById('skills-grid');
+  const skillsGrid = document.getElementById('skills-grid');
 
-    skills.forEach(skill => {
-        const card = document.createElement('div');
-        card.className = 'skill-card';
-        card.innerHTML = `
-            <div class="skill-header">
-                <div class="skill-info">
-                    <div class="skill-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                        </svg>
-                    </div>
-                    <span>${skill.name}</span>
-                </div>
-                <span class="skill-badge">${skill.level}%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: ${skill.level}%"></div>
-            </div>
-        `;
-        skillsGrid.appendChild(card);
-    });
+  skills.forEach(skill => {
+    const card = document.createElement('div');
+    card.className = 'skill-card';
+    card.innerHTML = `
+      <div class="skill-header">
+        <div class="skill-info">
+          <div class="skill-icon">
+            <img src="${skill.icon}" alt="${skill.name} Logo">
+          </div>
+          <span>${skill.name}</span>
+        </div>
+        <span class="skill-badge">${skill.level}%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: ${skill.level}%"></div>
+      </div>
+    `;
+    skillsGrid.appendChild(card);
+  });
 }
 
 // ===========================
