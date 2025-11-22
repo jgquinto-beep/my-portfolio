@@ -93,7 +93,6 @@ p {
     align-items: center;  /* keeps them vertically centered */
     gap: 0;         /* space between the two images */
     padding-top: 10px;
-
 }
 
 .nav-logo {
@@ -107,8 +106,10 @@ p {
 }
 
 .nav-title img {
-    width: 250px;  /* make the second logo longer */
-    height: 50px;
+    max-width: 250px;  /* make the second logo longer */
+    max-height: 50px;
+    min-width: none;
+    min-height: auto;
 }
 
 
