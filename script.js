@@ -324,6 +324,9 @@ function updateProjectsDots() {
 function showProjectDetail(project) {
   selectedProject = project;
 
+  // Navigate FIRST
+  navigateToPage("project");
+
   const detailsContainer = document.getElementById("project-details");
   detailsContainer.innerHTML = `
         <div class="project-detail-grid">
@@ -339,6 +342,7 @@ function showProjectDetail(project) {
                     </div>
                     <p>${project.description}</p>
                 </div>
+
                 <div class="project-detail-card" style="margin-top: 1.5rem;">
                     <div class="project-detail-header">
                         <div class="detail-icon">
@@ -355,6 +359,7 @@ function showProjectDetail(project) {
             <div class="project-main-section">
                 <span class="project-badge">${project.category}</span>
                 <h1 class="project-main-title">${project.title}</h1>
+
                 <div class="about-image-wrapper">
                     <div class="image-glow"></div>
                     <div class="image-card">
@@ -365,7 +370,7 @@ function showProjectDetail(project) {
          </a>`
       : `<img src="${project.image}" alt="${project.title}">`
   }
-</div>
+                    </div>
                 </div>
             </div>
 
@@ -379,6 +384,7 @@ function showProjectDetail(project) {
                         </div>
                         <h3>Tools Used</h3>
                     </div>
+
                     <div class="tools-list">
                         ${project.tools
                           .map(
@@ -399,9 +405,8 @@ function showProjectDetail(project) {
             </div>
         </div>
     `;
-
-  navigateToPage("project");
 }
+
 
 // ===========================
 // SKILLS SECTION
