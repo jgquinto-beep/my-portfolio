@@ -8,9 +8,10 @@ const projects = [
         title: 'KIS App',
         category: 'Flutter Mobile App Development',
         image: "images/kis-app.png",
-        description: 'An online mobile application called KIS-App. Exclusively made for grade 10 students of Kapayapaan integrated school. It is made using a combination of Flutter and Firebase aimed to be easily accesible, managed and developed.',
+        description: 'An online mobile application called KIS-App. Exclusively made for grade 10 students of Kapayapaan integrated school. It is made using a combination of Flutter and Firebase aimed to be easily accesible, managed and developed. You can check it here! https://github.com/jgquinto-beep/KIS-App/releases/latest',
         inspiration: 'Schools have their own way of managing school work, either by paper or using other software like google classroom. But instead using some software, why not make one specifically tailored for the school needs.',
-        tools: ['Visual Studio', 'Android Studio', 'Kotlin', 'Firebase Studio']
+        tools: ['Visual Studio', 'Android Studio', 'Kotlin', 'Firebase Studio'],
+        link: 'https://github.com/jgquinto-beep/KIS-App/releases/latest'
     },
     {
         id: 2,
@@ -23,57 +24,60 @@ const projects = [
     },
     {
         id: 3,
-        title: 'Brand Identity System',
-        category: 'Branding',
+        title: 'LegoMinds',
+        category: 'Web Development',
         image: 'images/legominds.png',
-        description: 'A complete brand identity system including logo design, color palette, typography, and brand guidelines. This project establishes a cohesive visual language across all touchpoints.',
-        inspiration: 'The client wanted a modern, approachable brand that would resonate with millennials while maintaining professional credibility. I explored minimalist design principles and contemporary color theory.',
-        tools: ['Illustrator', 'Photoshop', 'InDesign', 'Figma']
+        description: 'A first time attempt to create a website. Simple LEGO themed website aimed to advertise some LEGO products and practive making and designing useful webpage',
+        inspiration: 'Seeing LEGO as a kids toy, we aimed for a coloful and interactive design. Taking inspiration from LEGO itself, we used solid bright colors to get kids attention and provide a stimulating experience',
+        tools: ['Visual Studio', 'HTML 5', 'CSS',],
+        link: "https://jgquinto-beep.github.io/LegomindsV3/"
     },
     {
         id: 4,
-        title: 'Creative Studio Website',
-        category: 'Web Design',
-        image: 'https://images.unsplash.com/photo-1740059021917-425431914689?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRpZ2l0YWwlMjBkZXNpZ258ZW58MXx8fHwxNzYzNDM2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-        description: 'A bold, interactive website for a creative studio showcasing their portfolio and services. Features smooth animations, parallax scrolling, and an immersive user experience.',
-        inspiration: 'Inspired by the studio\'s creative energy and collaborative spirit. I wanted to create a digital space that feels as dynamic and inspiring as their physical studio.',
-        tools: ['Figma', 'After Effects', 'Webflow', 'Three.js']
+        title: 'Pizza Ordering System',
+        category: 'Java Application',
+        image: 'images/java-pizza.png',
+        description: 'A project made using java ide called Eclipse,the goal is to practice object oriented programming. A pizza ordering system utilizing basic buttons, button triggerss and listeners to compute prices. And output data based on the inputs made on the interface',
+        inspiration: 'For the simplicity of the project, a pizza ordering system provides the easiest way to practice. The design is also simple, that looks like an old interface. Bright red colors and higlighted boarders are used to give better lining a visuals',
+        tools: ['Eclipse IDE', 'Java']
     },
     {
         id: 5,
-        title: 'Fitness Tracking App',
-        category: 'Mobile App',
-        image: 'https://images.unsplash.com/photo-1762768767074-e491f1eebdfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwYXBwJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc2MzcwODkwMnww&ixlib=rb-4.1.0&q=80&w=1080',
-        description: 'A comprehensive fitness app that helps users track workouts, set goals, and monitor progress. Features include custom workout plans, nutrition tracking, and social challenges.',
-        inspiration: 'Designed to motivate users through gamification and social features, making fitness tracking engaging and fun.',
-        tools: ['Figma', 'Principle', 'React Native', 'Firebase']
+        title: 'AGGRO Esports_ Rise as One Event',
+        category: 'Typography Brand Poster',
+        image: 'images/typography-poster.png',
+        description: 'The poster shows the name of the esports organization with bold text placed over a blurred stadium background. The atmosphere is bright and filled with lights, suggesting a large crowd and an energetic event. The layout is clean, with the event details clearly listed at the bottom. Font choice is to fit in the E-sports kind of theme',
+        inspiration: 'The design takes cues from live sports posters, using a stadium setting to emphasize scale and excitement. The bold typography was chosen to make the brand name and slogan stand out at first glance. The overall look is meant to be professional and easy to read, while still carrying the feeling of a big national competition.',
+        tools: ['Canva']
     },
     {
         id: 6,
-        title: 'Social Media Platform',
-        category: 'Web Design',
-        image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGRlc2lnbnxlbnwxfHx8fDE3NjM3MDMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080',
-        description: 'A modern social platform focused on creative professionals. Features include portfolio sharing, collaboration tools, and networking capabilities.',
-        inspiration: 'Built for the creative community to showcase work and connect with like-minded professionals in a distraction-free environment.',
-        tools: ['Sketch', 'Figma', 'Vue.js', 'Node.js']
+        title: 'Social Event Advertising',
+        category: 'Graphics Designing',
+        image: 'images/graphic-advertisement.png',
+        description: 'A Facebook page post aimed to gather attention of people and students to attend and participate in an event called TECH WEEK',
+        inspiration: 'In events like TECH WEEK it is important to highlight social gathering and teamwork so I gave it a nice warm colors and exciting announcemtns',
+        tools: ['Facebook Page', 'Canva'],
+        link: "https://www.facebook.com/share/p/14LT8FD11bJ/"
     },
     {
         id: 7,
-        title: 'Restaurant Booking System',
+        title: 'Landing Page Design',
         category: 'Web Design',
-        image: 'https://images.unsplash.com/photo-1708335583165-57aa131a4969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwd2Vic2l0ZXxlbnwxfHx8fDE3NjM2NjAxMzV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-        description: 'An elegant booking system for fine dining establishments. Features include real-time availability, menu previews, and special requests handling.',
-        inspiration: 'Designed to capture the ambiance and sophistication of high-end dining experiences through elegant visuals and smooth interactions.',
-        tools: ['Figma', 'Adobe XD', 'React', 'Stripe']
+        image: 'images/landing-page-techweek.png',
+        description: 'A webdesign project that serves as a landing page for targeted/ interested audiences. This one is for a made up college advertising their event called TECH week',
+        inspiration: 'With this design, I highlighted the whole page using neon blue background and glowing hover buttons. Fit for a techy vibe',
+        tools: ['Canva'],
+        link :'https://jhonarcel.my.canva.site/landing-page-design'
     },
     {
         id: 8,
-        title: 'Music Streaming Interface',
-        category: 'Mobile App',
-        image: 'https://images.unsplash.com/photo-1615640848864-21d95c1dc365?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMHBsYXllciUyMGFwcHxlbnwxfHx8fDE3NjM3MTE1MzN8MA&ixlib=rb-4.1.0&q=80&w=1080',
-        description: 'A sleek music player with personalized playlists, discovery features, and social listening. Designed for music lovers who want more than just playback.',
-        inspiration: 'Focused on creating an immersive audio experience with beautiful album art displays and intuitive gesture controls.',
-        tools: ['Sketch', 'Principle', 'Swift', 'Kotlin']
+        title: 'Print Media Proposal',
+        category: 'Graphics Design',
+        image: 'images/print-media.png',
+        description: 'A split-style poster design for a prom night event. The left side shows a modern disco vibe with lights and dancing, while the right side highlights a vintage black-and-white theme with a couple dancing outdoors.',
+        inspiration: 'Since its for a dance, i opted to take inspiration where dancing is very romantic. 80s-90s dancing is very popular to all people, so to bring the vibe in the event i used the 80s charm to invite people',
+        tools: ['Canva']
     }
 ];
 
@@ -221,13 +225,13 @@ function renderProjects() {
         const card = document.createElement('div');
         card.className = 'project-card';
         card.innerHTML = `
-            <div class="project-image-wrapper">
-                <img src="${project.image}" alt="${project.title}" class="project-image">
-            </div>
-            <div class="project-info">
-                <p class="project-category">${project.category}</p>
-                <p class="project-title">${project.title}</p>
-            </div>
+        <div class="project-image-wrapper">
+            <img src="${project.image}" alt="${project.title}" class="project-image">
+        </div>
+        <div class="project-info">
+            <p class="project-category">${project.category}</p>
+            <h4 class="project-title">${project.title}</h4>
+        </div>
         `;
         card.addEventListener('click', () => showProjectDetail(project));
         carousel.appendChild(card);
@@ -307,8 +311,14 @@ function showProjectDetail(project) {
                 <div class="about-image-wrapper">
                     <div class="image-glow"></div>
                     <div class="image-card">
-                        <img src="${project.image}" alt="${project.title}">
-                    </div>
+  ${
+    project.link
+      ? `<a href="${project.link}" target="_blank">
+           <img src="${project.image}" alt="${project.title}">
+         </a>`
+      : `<img src="${project.image}" alt="${project.title}">`
+  }
+</div>
                 </div>
             </div>
 
