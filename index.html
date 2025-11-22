@@ -364,29 +364,33 @@
             </form>
           </div>
         </div>
-        <!--Comment Sections-->
-        <section class="comments-section">
-          <h2>Comments & Suggestions</h2>
+<!-- Comment Section -->
+<section class="comments-section">
+  <h2>Comments & Suggestions</h2>
 
-          <form id="commentForm">
-            <input
-              type="text"
-              id="commentName"
-              placeholder="Your Name"
-              required
-            />
-            <textarea
-              id="commentText"
-              placeholder="Write your comment..."
-              required
-            ></textarea>
-            <button type="submit">Submit</button>
-          </form>
+  <div class="comment-card">
+    <form id="commentForm" class="comment-form">
+      <input
+        type="text"
+        id="commentName"
+        placeholder="Your Name"
+        required
+      />
+      <textarea
+        id="commentText"
+        placeholder="Write your comment..."
+        required
+      ></textarea>
+      <button type="submit" class="btn-comment-submit">Submit</button>
+    </form>
+  </div>
 
-          <h3>All Comments</h3>
-          <div id="commentsList"></div>
-        </section>
-      </div>
+  <h3 class="comments-title">All Comments</h3>
+
+  <div class="comments-list-wrapper">
+    <div id="commentsList"></div>
+  </div>
+</section>
 
       <!-- Project Detail Page -->
       <div id="project-page" class="page">
