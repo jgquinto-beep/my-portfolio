@@ -14,18 +14,18 @@ const projects = [
     },
     {
         id: 2,
-        title: 'Mobile Banking App',
-        category: 'Mobile App',
-        image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzYzMzg1MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
-        description: 'A modern mobile banking application focusing on simplicity and security. Features include instant transfers, bill payments, expense tracking, and investment management all in one seamless experience.',
-        inspiration: 'Created after observing how traditional banking apps often overwhelm users with features. I focused on creating a minimal interface that makes common tasks accessible within 2-3 taps.',
-        tools: ['Figma', 'Sketch', 'Framer', 'Swift']
+        title: 'My Personal Logo',
+        category: 'Design',
+        image: 'images/my-logo.png',
+        description: 'My logo shows a simple 8-bit themed character. JDEVZ is my personal gamer tag that I use in every game I play. The slogan is simple and straight forward, "Develop and Play" All in an earthy tone which spells adventure',
+        inspiration: 'I love pixel art that i wanted my logo to be one, not too much, not too simple. My 8-bit logo is inspired my love to pixelated rpg survival games, brown, earthy, something that says "adventure" all over it, which I am really into',
+        tools: ['Pixel Art Generator']
     },
     {
         id: 3,
         title: 'Brand Identity System',
         category: 'Branding',
-        image: 'https://images.unsplash.com/photo-1762365189058-7be5b07e038b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZGluZyUyMGlkZW50aXR5JTIwbW9ja3VwfGVufDF8fHx8MTc2MzMzMDQzMXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'images/legominds.png',
         description: 'A complete brand identity system including logo design, color palette, typography, and brand guidelines. This project establishes a cohesive visual language across all touchpoints.',
         inspiration: 'The client wanted a modern, approachable brand that would resonate with millennials while maintaining professional credibility. I explored minimalist design principles and contemporary color theory.',
         tools: ['Illustrator', 'Photoshop', 'InDesign', 'Figma']
@@ -80,7 +80,7 @@ const projects = [
 // Skills data
 const skills = [
     { name: 'Flutter Mobile App Development', level: 95, icon: "images/flutter-logo.png" },
-    { name: 'Basic Programming', level: 80, icon: "images/basic-languages-icon.png" },
+    { name: 'Basic Programming', level: 70, icon: "images/basic-languages-icon.png" },
     { name: 'Dart Language', level: 95, icon: "images/dart-logo.png" },
     { name: 'Firebase/Firestore Database', level: 95, icon: "images/firebase-logo.png" }
 ];
