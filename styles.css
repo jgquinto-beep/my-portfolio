@@ -20,6 +20,10 @@ body {
   min-height: 100vh;
   color: #1e293b;
   line-height: 1.6;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    #faf4ef;
+  background-size: 40px 40px;
 }
 
 .container {
