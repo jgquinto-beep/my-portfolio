@@ -1,7 +1,23 @@
+// ------------------------------
+// Firebase Init
+// ------------------------------
+const firebaseConfig = {
+  apiKey: "AIzaSyCaU1pIFjdpsVfk8ymYyiXfTnK_p74Q9DI",
+  authDomain: "my-portfolio-comments.firebaseapp.com",
+  projectId: "my-portfolio-comments",
+  storageBucket: "my-portfolio-comments.firebasestorage.app",
+  messagingSenderId: "420512347766",
+  appId: "1:420512347766:web:312a0bb661fecdcdc71157"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
 // ===========================
 // PROJECT DATA - EASY TO ADD MORE PROJECTS!
 // Just copy and paste a project object and update the details
 // ===========================
+
 const projects = [
     {
         id: 1,
@@ -404,3 +420,48 @@ function initContactForm() {
         successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
 }
+
+// ------------------------------
+// Comments System
+// ------------------------------
+
+const commentForm = document.getElementById("commentForm");
+const commentsList = document.getElementById("commentsList");
+
+// SUBMIT COMMENT
+commentForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("commentName").value.trim();
+  const text = document.getElementById("commentText").value.trim();
+
+  if (!name || !text) return;
+
+  // Save to Firestore
+  await db.collection("comments").add({
+    name: name,
+    comment: text,
+    createdAt: new Date()
+  });
+
+  commentForm.reset();
+});
+
+// LOAD COMMENTS (real-time)
+db.collection("comments")
+  .orderBy("createdAt", "desc")
+  .onSnapshot((snapshot) => {
+    commentsList.innerHTML = "";
+    snapshot.forEach((doc) => {
+      const data = doc.data();
+
+      const div = document.createElement("div");
+      div.className = "comment-item";
+      div.innerHTML = `
+        <p><strong>${data.name}</strong></p>
+        <p>${data.comment}</p>
+        <hr>
+      `;
+      commentsList.appendChild(div);
+    });
+  });
