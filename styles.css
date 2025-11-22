@@ -112,8 +112,6 @@ p {
     min-height: auto;
 }
 
-
-
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -1050,5 +1048,39 @@ p {
 
     .projects-carousel-container {
         padding: 0 3rem;
+    }
+}
+
+/* === Responsive Logo Fix (added) === */
+.nav-logo img,
+.nav-title img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Tablet & small laptops */
+@media (max-width: 768px) {
+    .nav-brand {
+        gap: 0.5rem;
+    }
+
+    .nav-logo img {
+        max-width: 40px;
+    }
+
+    .nav-title img {
+        max-width: 120px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .nav-logo img {
+        max-width: 35px;
+    }
+
+    .nav-title img {
+        max-width: 100px;
     }
 }
